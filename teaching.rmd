@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+---
+
+### *Teaching Experience*
+
+---
+
+##### University of Tennessee, Knoxville | 2018
+
+Type: Guest Lecture
+Course: Human Computer Interaction
+Topic: Interface Design Tools
+
+---
+
+##### University of Tennessee, Knoxville | 2019
+
+Type: Guest Lecture
+Course: Human Computer Interaction
+Topic: UTAUT & Self-Driving Cars
+
+[View Slides](https://drive.google.com/file/d/1AGRQ5n04vQDpcvPDE-EXfjItWQaakp7-/view?usp=sharing)
+
+
+---
+
+*This Site is Made With Love in R*
