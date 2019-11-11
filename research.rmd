@@ -8,7 +8,9 @@
 
 ---
 
-##### Published Conference Papers 
+#### *Published Conference Papers*
+
+---
 
 Zhang, Qiaoning, **Esterwood, Connor**, Yang, X. Jessie, & RobertJr, Lionel P. (2019). An Automated Vehicle (AV) like Me? The Impact of Personality Similarities and Differences between Humans and AVs. Association for the Advancement of Artificial Intelligence 2019 Symposium
 
@@ -19,6 +21,10 @@ Zhao, H., Azevedo-Sa, H., **Esterwood, C.**, Yang, X. J., Robert, L., & Tilbury,
 #### *In The News*
 
 ---
+
+##### Articles written about my: "An Automated Vehicle (AV) like Me? The Impact of Personality Similarities and Differences between Humans and AVs" paper.
+
+<br>
 
 ###### *CNET*
 
