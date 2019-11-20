@@ -8,23 +8,37 @@
 
 ---
 
-##### University of Tennessee, Knoxville | 2018
+<div class="list-group">
+  <a href="#" class="list-group-item active">
+    **University of Michigan, Ann Arbor | 2019**
+  </a>
+  <a href="#" class="list-group-item">
+  **Course:** Doctoral Foundations Seminar </br>
+  **Type:** Discussion Lead </br>
+  **Topic:** Ways of Knowing </br>
+  </a>
+</div>
 
-Type: Guest Lecture
-Course: Human Computer Interaction
-Topic: Interface Design Tools
+<div class="list-group">
+  <a href="#" class="list-group-item active">
+    **University of Tennessee, Knoxville | 2019**
+  </a>
+  <a href="#" class="list-group-item">
+Type: Guest Lecture </br>
+Course: Human Computer Interaction </br>
+Topic: UTAUT & Self-Driving Cars </br>
+</a>
+</div>
 
----
-
-##### University of Tennessee, Knoxville | 2019
-
-Type: Guest Lecture
-Course: Human Computer Interaction
-Topic: UTAUT & Self-Driving Cars
-
-[View Slides](https://drive.google.com/file/d/1AGRQ5n04vQDpcvPDE-EXfjItWQaakp7-/view?usp=sharing)
-
-
----
+<div class="list-group">
+  <a href="#" class="list-group-item active">
+    **University of Tennessee, Knoxville | 2018**
+  </a>
+  <a href="#" class="list-group-item">
+Type: Guest Lecture </br>
+Course: Human Computer Interaction </br>
+Topic: Interface Design Tools </br>
+</a>
+</div>
 
 *This Site is Made With Love in R*
