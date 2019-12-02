@@ -29,6 +29,8 @@
 
 - Transportation Part C
 
+- AIS Transactions on Human-Computer Interaction
+
 ---
 
 
