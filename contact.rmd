@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+### *Contact Me*
+
+**By Email:**
+
+cte@umich.edu
+
+---
+
+**By Phone:**
+
+(Google Voice): 734-999-0582
+
+---
+
+**By Post:** 
+
+School of Information </br>
+Attn: Connor Esterwood </br>
+4432 North Quad </br>
+105 S State St </br>
+Ann Arbor, MI 48109 </br>
+United States </br>
