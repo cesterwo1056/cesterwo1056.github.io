@@ -31,6 +31,8 @@
 
 - AIS Transactions on Human-Computer Interaction
 
+- European Conference on Information Systems
+
 ---
 
 
