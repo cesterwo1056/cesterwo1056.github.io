@@ -10,6 +10,11 @@
 
 <div class="list-group">
   <a href="#" class="list-group-item active">
+    **Journal Papers**
+  </a>
+  <a class="list-group-item">
+JA26)  Robert, L. P., Alahmad, R., Zhang, Q., Kim, S., **Esterwood, C.**, and You, S. (2020). A Review of Personality in Human Robot Interactions. Foundations & Trends in Information Systems, *forthcoming*.
+<a href="#" class="list-group-item active">
     **Conference Papers**
   </a>
   <a href="https://www.researchgate.net/publication/335518077_An_Automated_Vehicle_AV_like_Me_The_Impact_of_Personality_Similarities_and_Differences_between_Humans_and_AVs" class="list-group-item">
