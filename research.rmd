@@ -12,10 +12,10 @@
   <a href="#" class="list-group-item active">
     **Conference Papers**
   </a>
-  <a href="#" class="list-group-item">
+  <a href="https://www.researchgate.net/publication/335518077_An_Automated_Vehicle_AV_like_Me_The_Impact_of_Personality_Similarities_and_Differences_between_Humans_and_AVs" class="list-group-item">
 Zhang, Qiaoning, **Esterwood, Connor**, Yang, X. Jessie, & RobertJr, Lionel P. (2019). An Automated Vehicle (AV) like Me? The Impact of Personality Similarities and Differences between Humans and AVs. Association for the Advancement of Artificial Intelligence 2019 Symposium
 </a>
-  <a href="#" class="list-group-item">
+  <a href="https://deepblue.lib.umich.edu/bitstream/handle/2027.42/149648/GVSETS%202019_FinalPaper.pdf?sequence=1&isAllowed=y" class="list-group-item">
 Zhao, H., Azevedo-Sa, H., **Esterwood, C.**, Yang, X. J., Robert, L., & Tilbury, D. (2019). Error Type, Risk, Performance, and Trust: Investigating the Different Impacts of false alarms and misses on Trust and Performance. Ground Vehicle Systems Engineering and Technology Symposium. 2019.
 </a>
 </div>
