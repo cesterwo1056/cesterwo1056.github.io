@@ -16,6 +16,9 @@
 JA26)  Robert, L. P., Alahmad, R., Zhang, Q., Kim, S., **Esterwood, C.**, and You, S. (2020). A Review of Personality in Human Robot Interactions. Foundations & Trends in Information Systems, *forthcoming*.
 <a href="#" class="list-group-item active">
     **Conference Papers**
+</a>
+  <a href="hdl.handle.net/2027.42/153524" class="list-group-item">
+Azevedo-Sa, H., Jayaraman, S., **Esterwood, C.**, Yang, X.J. and Robert, L. P. and Dawn M. Tilbury. 2020. Comparing the Effects of False Alarms and Misses on Humans’ Trust in (Semi)Autonomous Vehicles. In Companion of the 2020 ACM/IEEE International Conference on Human-Robot Interaction (HRI 2020), March 23 26, 2020, Cambridge, United Kingdom. ACM, New York, NY, USA.
   </a>
   <a href="https://www.researchgate.net/publication/335518077_An_Automated_Vehicle_AV_like_Me_The_Impact_of_Personality_Similarities_and_Differences_between_Humans_and_AVs" class="list-group-item">
 Zhang, Qiaoning, **Esterwood, Connor**, Yang, X. Jessie, & RobertJr, Lionel P. (2019). An Automated Vehicle (AV) like Me? The Impact of Personality Similarities and Differences between Humans and AVs. Association for the Advancement of Artificial Intelligence 2019 Symposium
