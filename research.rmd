@@ -12,9 +12,14 @@
   <a href="#" class="list-group-item active">
     **Journal Papers**
   </a>
+  <a href="https://deepblue.lib.umich.edu/handle/2027.42/153526" 
+  class="list-group-item">
+Robert, L. P., Alahmad, R., Zhang, Q., Kim, S., **Esterwood, C.**, and You, S. (2020). A Review of Personality in Human Robot Interactions. Foundations & Trends in Information Systems.
+  </a>
   <a class="list-group-item">
-JA26)  Robert, L. P., Alahmad, R., Zhang, Q., Kim, S., **Esterwood, C.**, and You, S. (2020). A Review of Personality in Human Robot Interactions. Foundations & Trends in Information Systems, *forthcoming*.
-</a>
+Abiri, R., Borhani, S., Kilmarx, J., **Esterwood, C.**, Zhao, X. Jiang, Y.
+(2020) Towards a User-Centered framework: A Statistical Approach on EEG-Based Computer Cursor Control Using Imagined Body Kinematics Paradigm. IEEE Transactions on Human Machine Systems, *forthcoming*
+  </a>
 
 <a href="#" class="list-group-item active">
     **Conference Papers**
