@@ -14,7 +14,7 @@
   </a>
   <a href="https://deepblue.lib.umich.edu/handle/2027.42/153526" 
   class="list-group-item">
-Robert, L. P., Alahmad, R., Zhang, Q., Kim, S., **Esterwood, C.**, and You, S. (2020). A Review of Personality in Human Robot Interactions. Foundations & Trends in Information Systems.
+Robert Jr, L. P., Alahmad, R., **Esterwood, C.**, Kim, S., You, S., & Zhang, Q. (2020). A Review of Personality in Human–Robot Interactions. Foundations and Trends® in Information Systems, 4(2), 107-212. **~~ Top 10 SSRN Download List April 2020 ~~**
   </a>
   <a class="list-group-item">
 Abiri, R., Borhani, S., Kilmarx, J., **Esterwood, C.**, Zhao, X. Jiang, Y.
