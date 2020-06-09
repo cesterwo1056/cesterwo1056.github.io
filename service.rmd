@@ -10,12 +10,18 @@
 
 ---
 
-<a href="#" class="list-group-item active">
+<a class="list-group-item active">
     **Ad-Hoc Reviewer Positions**
+</a>
+   <a class="list-group-item">
+    International Symposium on Robot and Human Interactive Communication (RO-MAN)
+</a>
+   <a class="list-group-item">
+    International Conference on Information Systems
 </a>
   <a class="list-group-item">
     IEEE Transactions in Neuroscience 
-  </a>
+</a>
   <a class="list-group-item">
     ACM/IEEE International Conference on Human-Robot Interaction
 </a>
@@ -33,7 +39,7 @@
 </a>
 
 <div class="list-group">
-  <a href="#" class="list-group-item active">
+  <a class="list-group-item active">
     **Committees & Advisorty Boards**
 </a>
   <a class="list-group-item">
