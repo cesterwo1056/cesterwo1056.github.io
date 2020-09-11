@@ -10,18 +10,6 @@
 
 <div class="list-group">
   <a class="list-group-item active">
-    **University of Michigan, Ann Arbor | 2020**
-  </a>
-  <a href="https://www.si.umich.edu/programs/courses/482" 
-  class="list-group-item">  **Course:** Interaction Design Studio </br>
-  **Type:** Graduate Student Instructor </br>
-  **Description:**
-This course introduces methods and skills to design and prototype interactive systems. </br>
-  </a>
-</div>
-
-<div class="list-group">
-  <a class="list-group-item active">
     **University of Tennessee, Knoxville | 2019**
   </a>
   <a class="list-group-item">

@@ -26,6 +26,9 @@ Abiri, R., Borhani, S., Kilmarx, J., **Esterwood, C.**, Zhao, X. Jiang, Y.
   <a href="https://deepblue.lib.umich.edu/handle/2027.42/156252" class="list-group-item">
 **Esterwood, C.** and Robert, L. P. (2020). Personality in Healthcare Human Robot Interaction (H-HRI): A Literature Review and Brief Critique. In Proceedings of the 8th International Conference on Human-Agent Interaction (HAI ’20), November 10–13, 2020, Virtual Event, NSW, Australia.
 </a>
+  <a href="https://deepblue.lib.umich.edu/handle/2027.42/156399" class="list-group-item">
+**Esterwood, C.** and Robert, L. P. (2020). Human Robot Team Design, Proceedings of the 8th International Conference on Human-Agent Interaction, November 10-13, Sydney, Australia. https://doi.org/10.1145/3406499.3418751
+</a>
   <a href="https://deepblue.lib.umich.edu/handle/2027.42/153524" class="list-group-item">
 Azevedo-Sa, H., Jayaraman, S., **Esterwood, C.**, Yang, X.J. and Robert, L. P. and Dawn M. Tilbury. 2020. Comparing the Effects of False Alarms and Misses on Humans’ Trust in (Semi)Autonomous Vehicles. In Companion of the 2020 ACM/IEEE International Conference on Human-Robot Interaction (HRI 2020), March 23 26, 2020, Cambridge, United Kingdom. ACM, New York, NY, USA.
   </a>
