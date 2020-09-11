@@ -3,12 +3,14 @@ output_dir: "."
 navbar:
   title: "Connor T. Esterwood"
   left:
-    - text: "Teaching"
-      href: teaching.html
     - text: "Research"
       href: research.html
+    - text: "Teaching"
+      href: teaching.html
     - text: "Service"
       href: service.html
+    - text: "Practice"
+      href: practice.html
   right:
     - icon: fa-envelope fa-lg
       href: contact.html

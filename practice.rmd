@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+---
+
+### *Design & Engineering Work*
+
+---
+
+#### ARC-CAVE 
+
+**Work Type:** Engineering / Consulting
+
+**Work Status:** Currently Underway
+
+**Summary:** 
+
+Starting in August of 2020 I joined a team of engineers at the University of Michigan's automotive research center with the goal of integrating human subjects into a autonomous driving simulation platform. This platform was original built as an HiL simulator and is now being expanded for the inclusion of a human subjects branch. My team is currently focusing on three different thrust areas. These thrust areas are:
+
+1. Establish physiological sensors to gather useful data from human subjects related to workload, situational awareness, and similar metrics.
+2. Establish the ability of the human actor to interface with the virtual world via a simulated vehicle cab and VR headset. 
+3. Establish bi-directional communication modalities such as touch, voice, and physical signaling between the virtual agents and the humans in the simulator.
+
+
+---
+
+#### ARC Next Generation HiL Simulatior 
+
+
+**Work Type:** Engineering / Consulting
+
+**Work Status:** Contract Fulfilled
+
+**Summary:** 
+
+In 2019 I spent 3 months or so working with the automotive research center at the University of Michigan to design a hardware-in-the-loop simulator that functions as a means to test algorithms and differed types of self-driving technologies before putting them into physical environments. The simulator was originally intended as an in-between testing device that can use real-world hardware (including its various limitations) to assess this functionality.The simulator has since evolved and broadened its scope to be a general purpose research tool for the entire ARC rather than just the algorithmic development aspects of the center. 
+
+
+---
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-2685-6435" href="https://orcid.org/0000-0002-2685-6435" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0002-2685-6435</a></div>
+
+*This Site is Made With Love in R*

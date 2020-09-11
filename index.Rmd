@@ -2,6 +2,13 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+---
+
+### *About Me*
+
+---
+
 <img src="images/Self.jpg" style="width:25%; border:5px solid; margin-right: 20px" align="left">
 
 
@@ -11,9 +18,74 @@ I am a current Ph.D. student in the school of information at the University of M
 
 HRTs combine the benefits of automation such as high accuracy, speed, and repeatability with flexibility, adaptability, and creative problem-solving ability typically associated with humans. My research at the University of Michigan involves the study of such teams, how they come about, how to optimize them, and how to safeguard against their potential negative effects.
 
+\
+
 ---
 
 <button onclick="window.location.href = 'Files/CV.pdf';" class="btn btn-primary"><i class="fa fa-download"></i> Download CV </button>
+
+---
+
+### *In The News*
+
+<details>
+  <summary>*Personality in AVs*</summary>
+
+###### *CNET*
+
+- Turns out humans want self-driving cars to possess a personality
+- <https://www.cnet.com/roadshow/news/self-driving-cars-human-personality/>*
+
+
+###### *The Media Hq*
+
+- What individuals want in an automated car
+- <https://themediahq.com/what-individuals-want-in-an-automated-car/>*
+
+
+###### *Scienceblog*
+
+- What Humans Want In An Automated Car
+- <https://scienceblog.com/511942/what-humans-want-in-an-automated-car/>*
+
+
+###### *Techcentury*
+
+- UM study finds what people want in an autonomous car
+- <https://www.techcentury.com/2019/11/08/um-study-finds-what-people-want-in-an-autonomous-car/>
+
+
+###### *Techxplore*
+
+- What humans want in an automated car
+- <https://techxplore.com/news/2019-11-humans-automated-car.html>
+
+
+###### *Small Tech News*
+
+- New research suggests people may want self-driving cars to show personality
+- <https://www.smalltechnews.com/archives/9017>
+
+
+
+###### *Mirage News*
+
+- What humans want in an automated car
+- <https://www.miragenews.com/what-humans-want-in-an-automated-car/>
+
+
+###### *Abudhabi News*
+
+- Turns out humans want self-driving cars to possess a personality
+- <https://abudhabi-news.com/English/6847312/Turns-out-humans-want-self-driving-cars-to-possess-a-personality---Roadshow>
+
+
+###### *Pressfrom.info <http://ressfrom.info>*
+
+- Turns out humans want self-driving cars to possess a personality
+- <https://pressfrom.info/ca/autos/news/-179816-turns-out-humans-want-self-driving-cars-to-possess-a-personality.html>
+
+</details>
 
 ---
 
