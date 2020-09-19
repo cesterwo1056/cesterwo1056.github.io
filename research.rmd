@@ -13,6 +13,9 @@
 <div class="list-group">
   <a href="#" class="list-group-item active">
     **Journal Papers**
+      </a>
+  <a href="https://deepblue.lib.umich.edu/handle/2027.42/162572" class="list-group-item">
+Azevedo-Sa, H., Jayaraman, S., **Esterwood, C.**, Yang, X. J., Robert, L. P. and Tilbury, D. (2020). Real-Time Estimation of Drivers’ Trust in Automated Driving Systems, International Journal of Social Robotics.
   </a>
   <a href="https://deepblue.lib.umich.edu/handle/2027.42/153526" 
   class="list-group-item">
@@ -20,7 +23,7 @@ Robert Jr, L. P., Alahmad, R., **Esterwood, C.**, Kim, S., You, S., & Zhang, Q. 
   </a>
   <a href="https://ieeexplore.ieee.org/abstract/document/9093862" class="list-group-item">
 Abiri, R., Borhani, S., Kilmarx, J., **Esterwood, C.**, Zhao, X. Jiang, Y.
-(2020) Towards a User-Centered framework: A Statistical Approach on EEG-Based Computer Cursor Control Using Imagined Body Kinematics Paradigm. IEEE Transactions on Human Machine Systems, *forthcoming*
+(2020) Towards a User-Centered framework: A Statistical Approach on EEG-Based Computer Cursor Control Using Imagined Body Kinematics Paradigm. IEEE Transactions on Human Machine Systems.
 </a>
   
 <a href="#" class="list-group-item active">

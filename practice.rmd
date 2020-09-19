@@ -22,7 +22,6 @@ Starting in August of 2020 I joined a team of engineers at the University of Mic
 2. Establish the ability of the human actor to interface with the virtual world via a simulated vehicle cab and VR headset. 
 3. Establish bi-directional communication modalities such as touch, voice, and physical signaling between the virtual agents and the humans in the simulator.
 
-
 ---
 
 #### ARC Next Generation HiL Simulatior 
