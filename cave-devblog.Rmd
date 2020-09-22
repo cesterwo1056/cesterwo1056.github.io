@@ -1,0 +1,97 @@
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+---
+
+### *CAVE Development Blog*
+
+*An often neglected log of my work on physiological sensing elements of the ARC's next generation simulator*
+
+---
+
+  <a class="btn btn-primary" data-toggle="collapse" href="#08-18-20" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Blog Update 09/18/20 - Eye Tracking & System Recs
+  </a>
+</p>
+<div class="collapse" id="08-18-20">
+  <div class="card card-body">
+
+---
+
+## Blog update 08-18-20
+
+##### Eye Tracking
+
+I've continued experimentation of the VIVE on my home system and have come to the conclusion that the pre-built free version of the eye tracking plugin is functional but limited and would take a good deal of time and effort to get to work the way we want it to. As such I have two recommendations for paid solutions that come out of the box with data extraction capabilities (or at least seem to claim to) that could significantly expedite the development of the eye tracking in our simulation. At this point, if time and effort is at a priority over cost, I would recommend that we go this route.
+
+###### a) i-Motions
+
+This company claims to have a fully functioning data extraction system that could work in close to real-time as discussed. The demo will determine how much of the case this is and we will see if it is a good fit for our needs.
+
+###### b) Tobii 
+
+Tobii has a paid SDK (plugin) that we could add to our project files that would allow for eye tracking data back and forth but, they actually can't really do what we want with their SDK after chatting with a rep but referred me to cognitive3D which could be of use as an alternative to a manually developed soloution using the Unreal Engine and VIVE's default SDK.
+
+###### c) Cognitieve3D
+
+This company seems small but also promising so I reached out for more information, I'm reviewing their information today and will get more info on their services and offerings later https://cognitive3d.com/ put together for consideration.
+
+
+---
+
+
+##### PC Requirements - FPS Issues 
+
+In relation to the PC requirements and the idea of improving our performance, I think Ted's suggestion seems to be aligning with what I can find out if we don't want to wait for newer hardware like the NVIDIA RTX 3090 or similar which honestly seem to have some supply issues currently.
+
+    CPU: Intel i9 10900K
+
+    RAM: 128 GB
+
+    GPU: NVIDIA RTX 2080 Ti
+
+    Storage: 2x 1 TB M.2 ssd, or 1x 2 TB M.2 ssd
+
+
+I also reached out to my professional network for recommendations and honestly, they are also struggling with the same challenges we are at this level of performance. Seems like there is quite an opportunity to advance the field if anyone can figure out how to parallelize these things effectively and efficiently.
+
+At the current point parallizing the software might yield results where we do some kind of concurrent programming but that is really hard to implement and takes both time, money, and the right expertise.  Apparently, whole languages are starting to emerge that are trying to make this coding easier (google's "GO" language).
+
+With things getting stuck on a single core, the only thing we could do is push the core to its physical limits and overclock it to a bit of an extreme degree (liquid cooling or nitrogen) which is not exactly stable or sustainable as far as I have heard. Barring that we are going to have to start cutting but, we might be able to avoid that if we push for some parallelizing to increase performance. Still, its cutting edge so unstable by nature.
+
+---
+
+  </div>
+</div>
+
+
+  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Blog Kick-Off - Project outline
+  </a>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+  
+---
+ 
+## Blog Purpose and Project Outline
+  
+Starting in August of 2020 I joined a team of engineers at the University of Michigan's automotive research center with the goal of integrating human subjects into a autonomous driving simulation platform. This platform was original built as an HiL simulator and is now being expanded for the inclusion of a human subjects branch. My team is currently focusing on three different thrust areas. 
+
+These thrust areas are:
+
+  1. Establish physiological sensors to gather useful data from human subjects related to workload, situational awareness, and similar metrics.
+  2. Establish the ability of the human actor to interface with the virtual world via a simulated vehicle cab and VR headset. 
+  3. Establish bi-directional communication modalities such as touch, voice, and physical signaling between the virtual agents and the humans in the simulator.
+  
+The purpose of this html blog is to log my progress on these projects. 
+
+**Presently there is a rough gant chart I'm using to tack things live [here](https://plan.toggl.com/#pp/Hcz3dlYWWxXe7Mrpabq9CsrNtpYrpSkJ)**
+  
+---
+  
+      
+  </div>
+</div>
+
