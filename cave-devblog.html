@@ -324,14 +324,13 @@ $(document).ready(function () {
 <hr />
 <div id="cave-development-blog" class="section level3">
 <h3><em>CAVE Development Blog</em></h3>
-<p><em>An often neglected log of my work on physiological sensing elements of the ARC’s next generation simulator</em></p>
 <hr />
 <a class="btn btn-primary" data-toggle="collapse" href="#08-18-20" role="button" aria-expanded="false" aria-controls="collapseExample"> Blog Update 09/18/20 - Eye Tracking &amp; System Recs </a>
 </p>
 <div id="08-18-20" class="collapse">
 <div class="card card-body">
 <hr />
-<h2 id="blog-update-08-18-20">Blog update 08-18-20</h2>
+<h2 id="eye-tracking-updates-and-pc-system-requirements">Eye tracking updates and PC system requirements</h2>
 <h5 id="eye-tracking">Eye Tracking</h5>
 <p>I’ve continued experimentation of the VIVE on my home system and have come to the conclusion that the pre-built free version of the eye tracking plugin is functional but limited and would take a good deal of time and effort to get to work the way we want it to. As such I have two recommendations for paid solutions that come out of the box with data extraction capabilities (or at least seem to claim to) that could significantly expedite the development of the eye tracking in our simulation. At this point, if time and effort is at a priority over cost, I would recommend that we go this route.</p>
 <h6 id="a-i-motions">a) i-Motions</h6>
@@ -353,6 +352,18 @@ Storage: 2x 1 TB M.2 ssd, or 1x 2 TB M.2 ssd</code></pre>
 <p>I also reached out to my professional network for recommendations and honestly, they are also struggling with the same challenges we are at this level of performance. Seems like there is quite an opportunity to advance the field if anyone can figure out how to parallelize these things effectively and efficiently.</p>
 <p>At the current point parallizing the software might yield results where we do some kind of concurrent programming but that is really hard to implement and takes both time, money, and the right expertise. Apparently, whole languages are starting to emerge that are trying to make this coding easier (google’s “GO” language).</p>
 <p>With things getting stuck on a single core, the only thing we could do is push the core to its physical limits and overclock it to a bit of an extreme degree (liquid cooling or nitrogen) which is not exactly stable or sustainable as far as I have heard. Barring that we are going to have to start cutting but, we might be able to avoid that if we push for some parallelizing to increase performance. Still, its cutting edge so unstable by nature.</p>
+<hr />
+</div>
+</div>
+<a class="btn btn-primary" data-toggle="collapse" href="#sens_wl" role="button" aria-expanded="false" aria-controls="collapseExample"> Blog Update 09/08/20 - Sensor Search &amp; Workload </a>
+</p>
+<div id="sens_wl" class="collapse">
+<div class="card card-body">
+<hr />
+<h2 id="sensor-investigations-workload">Sensor Investigations Workload</h2>
+<p>Examinign existing research I was able to identify a suite of different sensors for measuring workload. These sensors were fairy robust but some appeared easier to implement than others. Specifically, I saw GSR and Eye tracking as very suitable measurement instruments with little nosie transmission between them. A good paper in Sensors provided me with the following table that I used to make decisions about what I want to pull.</p>
+<p><img src="images/Workload_phys_table.png" /></p>
+<p>I decided to start with eye tracking since we already have that sensor but have sense foudn additional sensors in the lab, namely, GSR.</p>
 <hr />
 </div>
 </div>
