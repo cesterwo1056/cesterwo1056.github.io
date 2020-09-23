@@ -325,6 +325,112 @@ $(document).ready(function () {
 <div id="cave-development-blog" class="section level3">
 <h3><em>CAVE Development Blog</em></h3>
 <hr />
+<a class="btn btn-primary" data-toggle="collapse" href="#09-23-20" role="button" aria-expanded="false" aria-controls="collapseExample"> Blog Update 09/23/20 - I-Motions </a>
+</p>
+<div id="09-23-20" class="collapse">
+<div class="card card-body">
+<hr />
+<h2 id="i-motions-meeting">I-Motions Meeting</h2>
+<p>upon completion of a demo of the i-motions software suite, I think it is a good idea to utilize this service. I am however, in the process of viewing a competitor’s work but will need some time to determine if the competitor has a good enough product to compete with i-motions.</p>
+<p>One major issue with the i-motions suite however, is that they do not have full VR support out of the box for UE4 VR environments. We only really loose the object tracking and fixation effects from this which is secondary in my opinion to the pupil dilation and blink rate per my earlier entry on workload and eye tracking.</p>
+<p>I anticipate that we will want this feature eventually though so some transference of data will likely have to happen where we pipe raw data into i-motions one way or another.</p>
+<p>Below is the system requirements recommended for i-motions. It is unclear if we will need to run the simulation enviornment on the same computer as i-motions but we should expect to have to do so. That said, based on the lowest performance we should still be good with an i-9 VR computer system … probably …</p>
+<p></br></p>
+<h3 id="system-requirements-for-i-motions">System requirements for i-motions:</h3>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="45%" />
+<col width="15%" />
+<col width="21%" />
+<col width="1%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>System Performance</th>
+<th>Low</th>
+<th>Medium</th>
+<th>High</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CPU</td>
+<td>Intel i7 Generation</td>
+<td>Intel i7 Generation</td>
+<td>Intel i7 Generation 7 and up</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>RAM</td>
+<td>8 GB</td>
+<td>16GB</td>
+<td>32 GB</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Hard Drive (SSD only)</td>
+<td>128 GB</td>
+<td>512 GB</td>
+<td>1 TB</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Graphics card</td>
+<td>Nvidia 9 series 2-4GB</td>
+<td>Nvidia 10 series 4-6GB</td>
+<td>Nvidia 10 series 6-8GB or higher</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Operating System</td>
+<td>Windows 10</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Note: Apple, windows dual boot, and windows emulators not supported.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Monitor</td>
+<td>Resolution: 1920x1080 is the best supported resolution.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Size: Dependent on eye tracker, typically 22-25” monitor.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>2 Monitors required for dual screen.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p></br></p>
+<h3 id="networking">Networking</h3>
+<p>One disappointing feature of i-motions is that they don’t support networking so all the physiological elements have to run off a single computer. Now this isn’t clear if it will create an issue with our architecture for the sim since we can still tap into the i-motions API service to make close to real-time decisions as needed but, it might strain whatever computer is running i-motions, the sensors, and the simulation.</p>
+<p>I still think they are the place to go but I may find this coming back to bite me later on…</p>
+<p></br></p>
+<h3 id="varjio-hmd---vr">Varjio HMD - VR</h3>
+<p>So … the varjio HMD seems quite robust and has its own unique approach to eye trakcing. Certianly this seems like somethign we may want to get our hands on in some regard. I think for now we can stick with what we have but down the line it might be a good idea for us to persue this kind of HMD since it will have a higher resolotuion and seems to offload some of the work to the HMD more than the Vive does …. still it is uncertain if it is truly superior without having some time to play with it a bit and test it with our system.</p>
+<p>At present, I think the vive is good enough but the IR-eye trackers in the Varjio make it pertty enticing.</p>
+<hr />
+</div>
+</div>
 <a class="btn btn-primary" data-toggle="collapse" href="#08-18-20" role="button" aria-expanded="false" aria-controls="collapseExample"> Blog Update 09/18/20 - Eye Tracking &amp; System Recs </a>
 </p>
 <div id="08-18-20" class="collapse">
