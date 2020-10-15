@@ -25,6 +25,15 @@
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+      </style>
+
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
   pre:not([class]) {
@@ -325,6 +334,83 @@ $(document).ready(function () {
 <div id="cave-development-blog" class="section level3">
 <h3><em>CAVE Development Blog</em></h3>
 <hr />
+<a class="btn btn-primary" data-toggle="collapse" href="#10-15-20" role="button" aria-expanded="false" aria-controls="collapseExample"> Blog Update 10/15/20 - Data Extraction From Vive Pro Eye </a>
+</p>
+<div id="10-15-20" class="collapse">
+<div class="card card-body">
+<h2 id="vive-pro-eye-data-extraction">Vive Pro-Eye Data Extraction</h2>
+<p>Over the past few weeks, I’ve been working to get the vive pro-eye HMD to read the data indipendely of I-Motions to CSV files in the project directory. To get this to function, I had to do some initial work with the SDK provided from VIVE. This SDK can be located <a href="https://hub.vive.com/en-US/profile/material-download">here</a>. This SDK was at first kind of hard to utilize as it had some bugs for UE-v4.25 but now that things are working and the SDK was updated I was able to write some basic blue-print functions that made data collection relatively straight forward. These blueprint functions are below:</p>
+<h3 id="blueprint-for-gaze-data">Blueprint for Gaze Data</h3>
+<h4 id="step-01">Step 01:</h4>
+<p>Add Victory Plugin to UE4 downloadable <a href="https://www.mediafire.com/file/pgrpsf9my7tv1ae/VictoryPlugin25.zip/file">Here</a></p>
+<h4 id="step-02">Step 02:</h4>
+<p>Write blueprint framework</p>
+<div class="figure">
+<img src="images/2020-10-09_11-12-49.png.ac8669423fecd39f6c488d8d121001e5.png" alt="" />
+<p class="caption">Blueprint_For_Gaze_Data</p>
+</div>
+<hr />
+<h3 id="blueprint-for-pupil-dilation">Blueprint for Pupil dilation</h3>
+<p>Pupil Dilation takes some extra work to get functional as this was not in the SDK’s function library so additional work had to be done.</p>
+<h4 id="step-01-1">Step 01:</h4>
+<p>Add some code to exsting SDK files in the project’s Visual Studio Code (C++)</p>
+<h5 id="sranipaleye_functionlibrary.cpp">SRanipalEye_FunctionLibrary.cpp</h5>
+<pre><code>bool USRanipalEye_FunctionLibrary::GetPupilDiameter(EyeIndex eye, float&amp; diameter_mm)
+{
+    return SRanipalEye_Core::Instance()-&gt;GetPupilDiameter(eye, diameter_mm);
+}
+
+SRanipalEye_Core.cpp
+
+bool SRanipalEye_Core::GetPupilDiameter(EyeIndex eye, float &amp;diameter_mm)
+{
+    bool valid = false;
+    if (SRanipalEye_Framework::Instance()-&gt;GetStatus() == SRanipalEye_Framework::FrameworkStatus::NOT_SUPPORT) {
+        valid = true;
+        diameter_mm = 0.0f;
+    }
+    else {
+        UpdateData();
+
+        Eye::SingleEyeData eyeData;
+        switch (SRanipalEye_Framework::Instance()-&gt;GetEyeVersion())
+        {
+        case SupportedEyeVersion::version1:
+            eyeData = eye == EyeIndex::LEFT ? EyeData_.verbose_data.left : EyeData_.verbose_data.right;
+            break;
+        case SupportedEyeVersion::version2:
+            eyeData = eye == EyeIndex::LEFT ? EyeData_v2.verbose_data.left : EyeData_v2.verbose_data.right;
+            break;
+        }
+
+        valid = eyeData.GetValidity(Eye::SingleEyeDataValidity::SINGLE_EYE_DATA_PUPIL_DIAMETER_VALIDITY);
+        if (valid) {
+            diameter_mm = eyeData.pupil_diameter_mm;
+        }
+        else
+            diameter_mm = 0.0f;
+    }
+    return valid;
+}</code></pre>
+<h5 id="sranipal_core.h">SRanipal_Core.h</h5>
+<pre><code>bool GetPupilDiameter(EyeIndex eye, float&amp; diameter_mm);</code></pre>
+<h5 id="sranipaleye_functionlibrary.h">SRanipalEye_FunctionLibrary.h</h5>
+<pre><code>UFUNCTION(BlueprintCallable, Category = &quot;SRanipal|Eye&quot;)
+        static bool GetPupilDiameter(EyeIndex eye, float&amp; diameter_mm);</code></pre>
+<h4 id="step-02-1">Step 02:</h4>
+<p>Call functions in blueprint and build export framework</p>
+<p><strong>NOTE: This is repeated and a second CSV is read to for the other eye (Right Eye)</strong></p>
+<div class="figure">
+<img src="images/2020-10-15_11-15-15.png" alt="" />
+<p class="caption">Blueprint_For_Dilation_Data</p>
+</div>
+<hr />
+<p>With these blueprints in hand and the data extraction functional, I can now measure workload as well as build gaze based data points fully of my own accord and without going through a third party software.</p>
+<p>Now I just need to figure out how …. exactly …. I use pupil dilation to measure workload and implement this code in the master world project when the i-9 intel pcs arrive at the lab.</p>
+<p>Furthermore, we might switch to the Varjio and if this happens I’ll make a guide for future users of the VIVE.</p>
+<hr />
+</div>
+</div>
 <a class="btn btn-primary" data-toggle="collapse" href="#09-23-20" role="button" aria-expanded="false" aria-controls="collapseExample"> Blog Update 09/23/20 - I-Motions </a>
 </p>
 <div id="09-23-20" class="collapse">
