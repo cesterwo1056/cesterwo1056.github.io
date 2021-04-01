@@ -12,13 +12,9 @@
 <img src="images/Self.jpg" style="width:25%; border:5px solid; margin-right: 20px" align="left">
 
 
-I am a current Ph.D. student in the school of information at the University of Michigan. I focus my studies on the relationships between humans and machines. In particular, I study the effect of different team designs and other factors on outcomes such as performance, well-being, trust, and more. 
+I am a current Ph.D. student in the school of information at the University of Michigan. I focus my studies on the relationships between humans and machines. In particular, I study the effect of **trust** and **trust repair**. 
 
-**My recent work has focused on optimizing human-robot teams (HRTs).**
-
-HRTs combine the benefits of automation such as high accuracy, speed, and repeatability with flexibility, adaptability, and creative problem-solving ability typically associated with humans. My research at the University of Michigan involves the study of such teams, how they come about, how to optimize them, and how to safeguard against their potential negative effects.
-
-\
+In short, robots will make mistakes eventually and in doing so will jeopardize the trust that human's have in them. How do they recover form this violation and what is the best way to do so? Does it make a difference if they look or act human? Does the type of violation matter? These are all questions I'm interested in and examine in my past and present research stream.
 
 ---
 
@@ -26,61 +22,74 @@ HRTs combine the benefits of automation such as high accuracy, speed, and repeat
 
 ---
 
+
+
+
 ### *In The News*
 
 <details>
-  <summary>*Personality in AVs*</summary>
+    <summary>**Personality in Robots**</summary>
 
-###### *CNET*
+*Venture Beat*
+
+- Study flaws might be obscuring the role of personality in human-robot interactions
+- <https://venturebeat.com/2020/08/18/study-flaws-might-be-obscuring-the-role-of-personality-in-human-robot-interactions/>*
+
+</details>
+
+<details>
+  <summary>**Personality in Self-Driving**</summary>
+
+*CNET*
 
 - Turns out humans want self-driving cars to possess a personality
 - <https://www.cnet.com/roadshow/news/self-driving-cars-human-personality/>*
 
 
-###### *The Media Hq*
+*The Media Hq*
 
 - What individuals want in an automated car
 - <https://themediahq.com/what-individuals-want-in-an-automated-car/>*
 
 
-###### *Scienceblog*
+*Scienceblog*
 
 - What Humans Want In An Automated Car
 - <https://scienceblog.com/511942/what-humans-want-in-an-automated-car/>*
 
 
-###### *Techcentury*
+*Techcentury*
 
 - UM study finds what people want in an autonomous car
 - <https://www.techcentury.com/2019/11/08/um-study-finds-what-people-want-in-an-autonomous-car/>
 
 
-###### *Techxplore*
+*Techxplore*
 
 - What humans want in an automated car
 - <https://techxplore.com/news/2019-11-humans-automated-car.html>
 
 
-###### *Small Tech News*
+*Small Tech News*
 
 - New research suggests people may want self-driving cars to show personality
 - <https://www.smalltechnews.com/archives/9017>
 
 
 
-###### *Mirage News*
+*Mirage News*
 
 - What humans want in an automated car
 - <https://www.miragenews.com/what-humans-want-in-an-automated-car/>
 
 
-###### *Abudhabi News*
+*Abudhabi News*
 
 - Turns out humans want self-driving cars to possess a personality
 - <https://abudhabi-news.com/English/6847312/Turns-out-humans-want-self-driving-cars-to-possess-a-personality---Roadshow>
 
 
-###### *Pressfrom.info <http://ressfrom.info>*
+*Pressfrom.info <http://ressfrom.info>*
 
 - Turns out humans want self-driving cars to possess a personality
 - <https://pressfrom.info/ca/autos/news/-179816-turns-out-humans-want-self-driving-cars-to-possess-a-personality.html>

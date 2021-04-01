@@ -13,6 +13,9 @@
 <div class="list-group">
   <a href="#" class="list-group-item active">
     **Journal Papers**
+  </a>
+  <a href="https://www.tandfonline.com/doi/abs/10.1080/10447318.2021.1886485" class="list-group-item">
+**Esterwood, C.**, Yang, X. J., & Robert, L. P. (2021). Barriers to AV Bus Acceptance: A National Survey and Research Agenda. International Journal of Human–Computer Interaction, 1-13.
       </a>
   <a href="https://deepblue.lib.umich.edu/handle/2027.42/162572" class="list-group-item">
 Azevedo-Sa, H., Jayaraman, S., **Esterwood, C.**, Yang, X. J., Robert, L. P. and Tilbury, D. (2020). Real-Time Estimation of Drivers’ Trust in Automated Driving Systems, International Journal of Social Robotics.
@@ -29,7 +32,10 @@ Abiri, R., Borhani, S., Kilmarx, J., **Esterwood, C.**, Zhao, X. Jiang, Y.
 <a href="#" class="list-group-item active">
     **Conference Papers**
 </a>
-  <a href="https://deepblue.lib.umich.edu/handle/2027.42/156252" class="list-group-item">
+  <a href="https://dl.acm.org/doi/abs/10.1145/3406499.3415075" class="list-group-item">
+**Esterwood, C.**, Essenmacher, K., Yang, H., Zeng, F., & Robert, L. (2021). A Meta-Analysis of Human Personality and Robot Acceptance in Human-Robot Interaction. The 2021 ACM CHI Virtual Conference on Human Factors in Computing Systems (CHI `21).
+</a>
+  <a href="https://dl.acm.org/doi/abs/10.1145/3406499.3415075" class="list-group-item">
 **Esterwood, C.** and Robert, L. P. (2020). Personality in Healthcare Human Robot Interaction (H-HRI): A Literature Review and Brief Critique. In Proceedings of the 8th International Conference on Human-Agent Interaction (HAI ’20), November 10–13, 2020, Virtual Event, NSW, Australia.
 </a>
   <a href="https://deepblue.lib.umich.edu/handle/2027.42/156399" class="list-group-item">
@@ -44,6 +50,14 @@ Zhang, Qiaoning, **Esterwood, Connor**, Yang, X. Jessie, & RobertJr, Lionel P. (
   <a href="https://deepblue.lib.umich.edu/bitstream/handle/2027.42/149648/GVSETS%202019_FinalPaper.pdf?sequence=1&isAllowed=y" class="list-group-item">
 Zhao, H., Azevedo-Sa, H., **Esterwood, C.**, Yang, X. J., Robert, L., & Tilbury, D. (2019). Error Type, Risk, Performance, and Trust: Investigating the Different Impacts of false alarms and misses on Trust and Performance. Ground Vehicle Systems Engineering and Technology Symposium. 2019.
 </a>
+
+<a href="#" class="list-group-item active">
+    **Other Works**
+</a>
+  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3767609" class="list-group-item">
+**Esterwood, C.**, & Robert, L. (2021). Robots and COVID-19: Re-imagining Human–Robot Collaborative Work in Terms of Reducing Risks to Essential Workers. Available at SSRN 3767609.
+</a>
+
 </div>
 
 
