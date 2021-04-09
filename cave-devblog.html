@@ -13,6 +13,7 @@
 
 <title>cave-devblog.utf8</title>
 
+<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
@@ -337,25 +338,35 @@ $(document).ready(function () {
 <hr />
 <a class="btn btn-primary" data-toggle="collapse" href="#10-15-20" role="button" aria-expanded="false" aria-controls="collapseExample"> Blog Update 10/15/20 - Data Extraction From Vive Pro Eye </a>
 </p>
+</div>
 <div id="10-15-20" class="collapse">
-<div class="card card-body">
-<h2 id="vive-pro-eye-data-extraction">Vive Pro-Eye Data Extraction</h2>
+<div id="vive-pro-eye-data-extraction" class="section level2 card card-body">
+<h2>Vive Pro-Eye Data Extraction</h2>
 <p>Over the past few weeks, I’ve been working to get the vive pro-eye HMD to read the data indipendely of I-Motions to CSV files in the project directory. To get this to function, I had to do some initial work with the SDK provided from VIVE. This SDK can be located <a href="https://hub.vive.com/en-US/profile/material-download">here</a>. This SDK was at first kind of hard to utilize as it had some bugs for UE-v4.25 but now that things are working and the SDK was updated I was able to write some basic blue-print functions that made data collection relatively straight forward. These blueprint functions are below:</p>
-<h3 id="blueprint-for-gaze-data">Blueprint for Gaze Data</h3>
-<h4 id="step-01">Step 01:</h4>
+<div id="blueprint-for-gaze-data" class="section level3">
+<h3>Blueprint for Gaze Data</h3>
+<div id="step-01" class="section level4">
+<h4>Step 01:</h4>
 <p>Add Victory Plugin to UE4 downloadable <a href="https://www.mediafire.com/file/pgrpsf9my7tv1ae/VictoryPlugin25.zip/file">Here</a></p>
-<h4 id="step-02">Step 02:</h4>
+</div>
+<div id="step-02" class="section level4">
+<h4>Step 02:</h4>
 <p>Write blueprint framework</p>
 <div class="figure">
 <img src="images/2020-10-09_11-12-49.png.ac8669423fecd39f6c488d8d121001e5.png" alt="" />
 <p class="caption">Blueprint_For_Gaze_Data</p>
 </div>
 <hr />
-<h3 id="blueprint-for-pupil-dilation">Blueprint for Pupil dilation</h3>
+</div>
+</div>
+<div id="blueprint-for-pupil-dilation" class="section level3">
+<h3>Blueprint for Pupil dilation</h3>
 <p>Pupil Dilation takes some extra work to get functional as this was not in the SDK’s function library so additional work had to be done.</p>
-<h4 id="step-01-1">Step 01:</h4>
+<div id="step-01-1" class="section level4">
+<h4>Step 01:</h4>
 <p>Add some code to exsting SDK files in the project’s Visual Studio Code (C++)</p>
-<h5 id="sranipaleye_functionlibrary.cpp">SRanipalEye_FunctionLibrary.cpp</h5>
+<div id="sranipaleye_functionlibrary.cpp" class="section level5">
+<h5>SRanipalEye_FunctionLibrary.cpp</h5>
 <pre><code>bool USRanipalEye_FunctionLibrary::GetPupilDiameter(EyeIndex eye, float&amp; diameter_mm)
 {
     return SRanipalEye_Core::Instance()-&gt;GetPupilDiameter(eye, diameter_mm);
@@ -393,12 +404,19 @@ bool SRanipalEye_Core::GetPupilDiameter(EyeIndex eye, float &amp;diameter_mm)
     }
     return valid;
 }</code></pre>
-<h5 id="sranipal_core.h">SRanipal_Core.h</h5>
+</div>
+<div id="sranipal_core.h" class="section level5">
+<h5>SRanipal_Core.h</h5>
 <pre><code>bool GetPupilDiameter(EyeIndex eye, float&amp; diameter_mm);</code></pre>
-<h5 id="sranipaleye_functionlibrary.h">SRanipalEye_FunctionLibrary.h</h5>
+</div>
+<div id="sranipaleye_functionlibrary.h" class="section level5">
+<h5>SRanipalEye_FunctionLibrary.h</h5>
 <pre><code>UFUNCTION(BlueprintCallable, Category = &quot;SRanipal|Eye&quot;)
         static bool GetPupilDiameter(EyeIndex eye, float&amp; diameter_mm);</code></pre>
-<h4 id="step-02-1">Step 02:</h4>
+</div>
+</div>
+<div id="step-02-1" class="section level4">
+<h4>Step 02:</h4>
 <p>Call functions in blueprint and build export framework</p>
 <p><strong>NOTE: This is repeated and a second CSV is read to for the other eye (Right Eye)</strong></p>
 <div class="figure">
@@ -412,18 +430,22 @@ bool SRanipalEye_Core::GetPupilDiameter(EyeIndex eye, float &amp;diameter_mm)
 <hr />
 </div>
 </div>
+</div>
+</div>
 <a class="btn btn-primary" data-toggle="collapse" href="#09-23-20" role="button" aria-expanded="false" aria-controls="collapseExample"> Blog Update 09/23/20 - I-Motions </a>
 </p>
 <div id="09-23-20" class="collapse">
 <div class="card card-body">
 <hr />
-<h2 id="i-motions-meeting">I-Motions Meeting</h2>
+<div id="i-motions-meeting" class="section level2">
+<h2>I-Motions Meeting</h2>
 <p>upon completion of a demo of the i-motions software suite, I think it is a good idea to utilize this service. I am however, in the process of viewing a competitor’s work but will need some time to determine if the competitor has a good enough product to compete with i-motions.</p>
 <p>One major issue with the i-motions suite however, is that they do not have full VR support out of the box for UE4 VR environments. We only really loose the object tracking and fixation effects from this which is secondary in my opinion to the pupil dilation and blink rate per my earlier entry on workload and eye tracking.</p>
 <p>I anticipate that we will want this feature eventually though so some transference of data will likely have to happen where we pipe raw data into i-motions one way or another.</p>
 <p>Below is the system requirements recommended for i-motions. It is unclear if we will need to run the simulation enviornment on the same computer as i-motions but we should expect to have to do so. That said, based on the lowest performance we should still be good with an i-9 VR computer system … probably …</p>
 <p></br></p>
-<h3 id="system-requirements-for-i-motions">System requirements for i-motions:</h3>
+<div id="system-requirements-for-i-motions" class="section level3">
+<h3>System requirements for i-motions:</h3>
 <table>
 <colgroup>
 <col width="15%" />
@@ -508,14 +530,20 @@ bool SRanipalEye_Core::GetPupilDiameter(EyeIndex eye, float &amp;diameter_mm)
 </tbody>
 </table>
 <p></br></p>
-<h3 id="networking">Networking</h3>
+</div>
+<div id="networking" class="section level3">
+<h3>Networking</h3>
 <p>One disappointing feature of i-motions is that they don’t support networking so all the physiological elements have to run off a single computer. Now this isn’t clear if it will create an issue with our architecture for the sim since we can still tap into the i-motions API service to make close to real-time decisions as needed but, it might strain whatever computer is running i-motions, the sensors, and the simulation.</p>
 <p>I still think they are the place to go but I may find this coming back to bite me later on…</p>
 <p></br></p>
-<h3 id="varjio-hmd---vr">Varjio HMD - VR</h3>
+</div>
+<div id="varjio-hmd---vr" class="section level3">
+<h3>Varjio HMD - VR</h3>
 <p>So … the varjio HMD seems quite robust and has its own unique approach to eye trakcing. Certianly this seems like somethign we may want to get our hands on in some regard. I think for now we can stick with what we have but down the line it might be a good idea for us to persue this kind of HMD since it will have a higher resolotuion and seems to offload some of the work to the HMD more than the Vive does …. still it is uncertain if it is truly superior without having some time to play with it a bit and test it with our system.</p>
 <p>At present, I think the vive is good enough but the IR-eye trackers in the Varjio make it pertty enticing.</p>
 <hr />
+</div>
+</div>
 </div>
 </div>
 <a class="btn btn-primary" data-toggle="collapse" href="#08-18-20" role="button" aria-expanded="false" aria-controls="collapseExample"> Blog Update 09/18/20 - Eye Tracking &amp; System Recs </a>
@@ -523,17 +551,27 @@ bool SRanipalEye_Core::GetPupilDiameter(EyeIndex eye, float &amp;diameter_mm)
 <div id="08-18-20" class="collapse">
 <div class="card card-body">
 <hr />
-<h2 id="eye-tracking-updates-and-pc-system-requirements">Eye tracking updates and PC system requirements</h2>
-<h5 id="eye-tracking">Eye Tracking</h5>
+<div id="eye-tracking-updates-and-pc-system-requirements" class="section level2">
+<h2>Eye tracking updates and PC system requirements</h2>
+<div id="eye-tracking" class="section level5">
+<h5>Eye Tracking</h5>
 <p>I’ve continued experimentation of the VIVE on my home system and have come to the conclusion that the pre-built free version of the eye tracking plugin is functional but limited and would take a good deal of time and effort to get to work the way we want it to. As such I have two recommendations for paid solutions that come out of the box with data extraction capabilities (or at least seem to claim to) that could significantly expedite the development of the eye tracking in our simulation. At this point, if time and effort is at a priority over cost, I would recommend that we go this route.</p>
-<h6 id="a-i-motions">a) i-Motions</h6>
+<div id="a-i-motions" class="section level6">
+<h6>a) i-Motions</h6>
 <p>This company claims to have a fully functioning data extraction system that could work in close to real-time as discussed. The demo will determine how much of the case this is and we will see if it is a good fit for our needs.</p>
-<h6 id="b-tobii">b) Tobii</h6>
+</div>
+<div id="b-tobii" class="section level6">
+<h6>b) Tobii</h6>
 <p>Tobii has a paid SDK (plugin) that we could add to our project files that would allow for eye tracking data back and forth but, they actually can’t really do what we want with their SDK after chatting with a rep but referred me to cognitive3D which could be of use as an alternative to a manually developed soloution using the Unreal Engine and VIVE’s default SDK.</p>
-<h6 id="c-cognitieve3d">c) Cognitieve3D</h6>
+</div>
+<div id="c-cognitieve3d" class="section level6">
+<h6>c) Cognitieve3D</h6>
 <p>This company seems small but also promising so I reached out for more information, I’m reviewing their information today and will get more info on their services and offerings later <a href="https://cognitive3d.com/" class="uri">https://cognitive3d.com/</a> put together for consideration.</p>
 <hr />
-<h5 id="pc-requirements---fps-issues">PC Requirements - FPS Issues</h5>
+</div>
+</div>
+<div id="pc-requirements---fps-issues" class="section level5">
+<h5>PC Requirements - FPS Issues</h5>
 <p>In relation to the PC requirements and the idea of improving our performance, I think Ted’s suggestion seems to be aligning with what I can find out if we don’t want to wait for newer hardware like the NVIDIA RTX 3090 or similar which honestly seem to have some supply issues currently.</p>
 <pre><code>CPU: Intel i9 10900K
 
@@ -548,16 +586,20 @@ Storage: 2x 1 TB M.2 ssd, or 1x 2 TB M.2 ssd</code></pre>
 <hr />
 </div>
 </div>
+</div>
+</div>
 <a class="btn btn-primary" data-toggle="collapse" href="#sens_wl" role="button" aria-expanded="false" aria-controls="collapseExample"> Blog Update 09/08/20 - Sensor Search &amp; Workload </a>
 </p>
 <div id="sens_wl" class="collapse">
 <div class="card card-body">
 <hr />
-<h2 id="sensor-investigations-workload">Sensor Investigations Workload</h2>
+<div id="sensor-investigations-workload" class="section level2">
+<h2>Sensor Investigations Workload</h2>
 <p>Examinign existing research I was able to identify a suite of different sensors for measuring workload. These sensors were fairy robust but some appeared easier to implement than others. Specifically, I saw GSR and Eye tracking as very suitable measurement instruments with little nosie transmission between them. A good paper in Sensors provided me with the following table that I used to make decisions about what I want to pull.</p>
 <p><img src="images/Workload_phys_table.png" /></p>
 <p>I decided to start with eye tracking since we already have that sensor but have sense foudn additional sensors in the lab, namely, GSR.</p>
 <hr />
+</div>
 </div>
 </div>
 <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> Blog Kick-Off - Project outline </a>
@@ -565,7 +607,8 @@ Storage: 2x 1 TB M.2 ssd, or 1x 2 TB M.2 ssd</code></pre>
 <div id="collapseExample" class="collapse">
 <div class="card card-body">
 <hr />
-<h2 id="blog-purpose-and-project-outline">Blog Purpose and Project Outline</h2>
+<div id="blog-purpose-and-project-outline" class="section level2">
+<h2>Blog Purpose and Project Outline</h2>
 <p>Starting in August of 2020 I joined a team of engineers at the University of Michigan’s automotive research center with the goal of integrating human subjects into a autonomous driving simulation platform. This platform was original built as an HiL simulator and is now being expanded for the inclusion of a human subjects branch. My team is currently focusing on three different thrust areas.</p>
 <p>These thrust areas are:</p>
 <ol style="list-style-type: decimal">
