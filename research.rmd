@@ -16,8 +16,14 @@
   </a>
   <a href="https://www.tandfonline.com/doi/abs/10.1080/10447318.2021.1886485" class="list-group-item">
 **Esterwood, C.**, Yang, X. J., & Robert, L. P. (2021). Barriers to AV Bus Acceptance: A National Survey and Research Agenda. International Journal of Human–Computer Interaction, 1-13.
-      </a>
-  <a href="https://deepblue.lib.umich.edu/handle/2027.42/162572" class="list-group-item">
+  </a>
+      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3767609" class="list-group-item">
+**Esterwood, C.**, & Robert, L. (2021). Robots and COVID-19: Re-imagining human-robot collaborative work in terms of reducing risks to essential workers. ROBONOMICS: The Journal of the Automated Economy, 1, 9-9.  
+</a>
+      <a href="https://www.sciencedirect.com/science/article/pii/S0968090X21000103" class="list-group-item">
+Azevedo-Sa, H., Zhao, H., **Esterwood, C.**, Yang, X. J., Tilbury, D. M., & Robert Jr, L. P. (2021). How internal and external risks affect the relationships between trust and driver behavior in automated driving systems. Transportation research part C: emerging technologies, 123, 102973.
+</a>
+<a href="https://deepblue.lib.umich.edu/handle/2027.42/162572" class="list-group-item">
 Azevedo-Sa, H., Jayaraman, S., **Esterwood, C.**, Yang, X. J., Robert, L. P. and Tilbury, D. (2020). Real-Time Estimation of Drivers’ Trust in Automated Driving Systems, International Journal of Social Robotics.
   </a>
   <a href="https://deepblue.lib.umich.edu/handle/2027.42/153526" 
@@ -51,12 +57,6 @@ Zhang, Qiaoning, **Esterwood, Connor**, Yang, X. Jessie, & RobertJr, Lionel P. (
 Zhao, H., Azevedo-Sa, H., **Esterwood, C.**, Yang, X. J., Robert, L., & Tilbury, D. (2019). Error Type, Risk, Performance, and Trust: Investigating the Different Impacts of false alarms and misses on Trust and Performance. Ground Vehicle Systems Engineering and Technology Symposium. 2019.
 </a>
 
-<a href="#" class="list-group-item active">
-    **Other Works**
-</a>
-  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3767609" class="list-group-item">
-**Esterwood, C.**, & Robert, L. (2021). Robots and COVID-19: Re-imagining Human–Robot Collaborative Work in Terms of Reducing Risks to Essential Workers. Available at SSRN 3767609.
-</a>
 
 </div>
 
