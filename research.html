@@ -11,15 +11,24 @@
 
 
 
-<title>research.utf8</title>
+<title>research.knit</title>
 
-<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -36,11 +45,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -53,32 +57,6 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
 
 
 <link rel="stylesheet" href="styles.css" type="text/css" />
@@ -90,10 +68,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -110,40 +84,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 64px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h2 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h3 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h4 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h5 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h6 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -171,7 +118,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -183,7 +130,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -194,10 +141,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -209,7 +169,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -301,19 +260,19 @@ $(document).ready(function () {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="contact.html">
-    <span class="fas fa-envelope fa-lg"></span>
+    <span class="fa fa-envelope fa-lg"></span>
      
   </a>
 </li>
 <li>
   <a href="https://www.linkedin.com/in/connor-esterwood-65b17157">
-    <span class="fas fa-linkedin fa-lg"></span>
+    <span class="fa fa-linkedin fa-lg"></span>
      
   </a>
 </li>
 <li>
   <a href="https://dribbble.com/cte">
-    <span class="fas fa-dribbble fa-lg"></span>
+    <span class="fa fa-dribbble fa-lg"></span>
      
   </a>
 </li>
@@ -322,7 +281,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -340,7 +299,7 @@ $(document).ready(function () {
 <p><a href="#" class="list-group-item active"> <strong>Journal Papers</strong> </a> <a href="https://www.tandfonline.com/doi/abs/10.1080/10447318.2021.1886485" class="list-group-item"> <strong>Esterwood, C.</strong>, Yang, X. J., &amp; Robert, L. P. (2021). Barriers to AV Bus Acceptance: A National Survey and Research Agenda. International Journal of Human–Computer Interaction, 1-13. </a> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3767609" class="list-group-item"> <strong>Esterwood, C.</strong>, &amp; Robert, L. (2021). Robots and COVID-19: Re-imagining human-robot collaborative work in terms of reducing risks to essential workers. ROBONOMICS: The Journal of the Automated Economy, 1, 9-9.<br />
 </a> <a href="https://www.sciencedirect.com/science/article/pii/S0968090X21000103" class="list-group-item"> Azevedo-Sa, H., Zhao, H., <strong>Esterwood, C.</strong>, Yang, X. J., Tilbury, D. M., &amp; Robert Jr, L. P. (2021). How internal and external risks affect the relationships between trust and driver behavior in automated driving systems. Transportation research part C: emerging technologies, 123, 102973. </a> <a href="https://deepblue.lib.umich.edu/handle/2027.42/162572" class="list-group-item"> Azevedo-Sa, H., Jayaraman, S., <strong>Esterwood, C.</strong>, Yang, X. J., Robert, L. P. and Tilbury, D. (2020). Real-Time Estimation of Drivers’ Trust in Automated Driving Systems, International Journal of Social Robotics. </a> <a href="https://deepblue.lib.umich.edu/handle/2027.42/153526" 
   class="list-group-item"> Robert Jr, L. P., Alahmad, R., <strong>Esterwood, C.</strong>, Kim, S., You, S., &amp; Zhang, Q. (2020). A Review of Personality in Human–Robot Interactions. Foundations and Trends® in Information Systems, 4(2), 107-212. <strong>Top 10 SSRN Download List: April 2020 &amp; July 2020</strong> </a> <a href="https://ieeexplore.ieee.org/abstract/document/9093862" class="list-group-item"> Abiri, R., Borhani, S., Kilmarx, J., <strong>Esterwood, C.</strong>, Zhao, X. Jiang, Y. (2020) Towards a User-Centered framework: A Statistical Approach on EEG-Based Computer Cursor Control Using Imagined Body Kinematics Paradigm. IEEE Transactions on Human Machine Systems. </a></p>
-<p><a href="#" class="list-group-item active"> <strong>Conference Papers</strong> </a> <a href="https://dl.acm.org/doi/abs/10.1145/3406499.3415075" class="list-group-item"> <strong>Esterwood, C.</strong>, Essenmacher, K., Yang, H., Zeng, F., &amp; Robert, L. (2021). A Meta-Analysis of Human Personality and Robot Acceptance in Human-Robot Interaction. The 2021 ACM CHI Virtual Conference on Human Factors in Computing Systems (CHI `21). </a> <a href="https://dl.acm.org/doi/abs/10.1145/3406499.3415075" class="list-group-item"> <strong>Esterwood, C.</strong> and Robert, L. P. (2020). Personality in Healthcare Human Robot Interaction (H-HRI): A Literature Review and Brief Critique. In Proceedings of the 8th International Conference on Human-Agent Interaction (HAI ’20), November 10–13, 2020, Virtual Event, NSW, Australia. </a> <a href="https://deepblue.lib.umich.edu/handle/2027.42/156399" class="list-group-item"> <strong>Esterwood, C.</strong> and Robert, L. P. (2020). Human Robot Team Design, Proceedings of the 8th International Conference on Human-Agent Interaction, November 10-13, Sydney, Australia. https://doi.org/10.1145/3406499.3418751 </a> <a href="https://deepblue.lib.umich.edu/handle/2027.42/153524" class="list-group-item"> Azevedo-Sa, H., Jayaraman, S., <strong>Esterwood, C.</strong>, Yang, X.J. and Robert, L. P. and Dawn M. Tilbury. 2020. Comparing the Effects of False Alarms and Misses on Humans’ Trust in (Semi)Autonomous Vehicles. In Companion of the 2020 ACM/IEEE International Conference on Human-Robot Interaction (HRI 2020), March 23 26, 2020, Cambridge, United Kingdom. ACM, New York, NY, USA. </a> <a href="https://www.researchgate.net/publication/335518077_An_Automated_Vehicle_AV_like_Me_The_Impact_of_Personality_Similarities_and_Differences_between_Humans_and_AVs" class="list-group-item"> Zhang, Qiaoning, <strong>Esterwood, Connor</strong>, Yang, X. Jessie, &amp; RobertJr, Lionel P. (2019). An Automated Vehicle (AV) like Me? The Impact of Personality Similarities and Differences between Humans and AVs. Association for the Advancement of Artificial Intelligence 2019 Symposium </a> <a href="https://deepblue.lib.umich.edu/bitstream/handle/2027.42/149648/GVSETS%202019_FinalPaper.pdf?sequence=1&isAllowed=y" class="list-group-item"> Zhao, H., Azevedo-Sa, H., <strong>Esterwood, C.</strong>, Yang, X. J., Robert, L., &amp; Tilbury, D. (2019). Error Type, Risk, Performance, and Trust: Investigating the Different Impacts of false alarms and misses on Trust and Performance. Ground Vehicle Systems Engineering and Technology Symposium. 2019. </a></p>
+<p><a href="#" class="list-group-item active"> <strong>Conference Papers</strong> </a> <a href="http://dx.doi.org/10.7302/1676" class="list-group-item"> <strong>Esterwood, C.</strong>, Essenmacher, K., Yang, H., Zeng, F. and Robert, L. P. (2021). Birds of a Feather Flock Together: But do Humans and Robots? A Meta-Analysis of Human and Robot Personality Matching, Proceedings of 30th IEEE International Conference on Robot and Human Interactive Communication (RO-MAN 2021) </a> <a href="http://dx.doi.org/10.7302/1675" class="list-group-item"> <strong>Esterwood, C.</strong> and Robert, L. P. (2021). Do You Still Trust Me? Human-Robot Trust Repair Strategies, Proceedings of 30th IEEE International Conference on Robot and Human Interactive Communication (RO-MAN 2021). </a> <a href="https://dl.acm.org/doi/abs/10.1145/3406499.3415075" class="list-group-item"> <strong>Esterwood, C.</strong>, Essenmacher, K., Yang, H., Zeng, F., &amp; Robert, L. (2021). A Meta-Analysis of Human Personality and Robot Acceptance in Human-Robot Interaction. The 2021 ACM CHI Virtual Conference on Human Factors in Computing Systems (CHI `21). </a> <a href="https://dl.acm.org/doi/abs/10.1145/3406499.3415075" class="list-group-item"> <strong>Esterwood, C.</strong> and Robert, L. P. (2020). Personality in Healthcare Human Robot Interaction (H-HRI): A Literature Review and Brief Critique. In Proceedings of the 8th International Conference on Human-Agent Interaction (HAI ’20), November 10–13, 2020, Virtual Event, NSW, Australia. </a> <a href="https://deepblue.lib.umich.edu/handle/2027.42/156399" class="list-group-item"> <strong>Esterwood, C.</strong> and Robert, L. P. (2020). Human Robot Team Design, Proceedings of the 8th International Conference on Human-Agent Interaction, November 10-13, Sydney, Australia. https://doi.org/10.1145/3406499.3418751 </a> <a href="https://deepblue.lib.umich.edu/handle/2027.42/153524" class="list-group-item"> Azevedo-Sa, H., Jayaraman, S., <strong>Esterwood, C.</strong>, Yang, X.J. and Robert, L. P. and Dawn M. Tilbury. 2020. Comparing the Effects of False Alarms and Misses on Humans’ Trust in (Semi)Autonomous Vehicles. In Companion of the 2020 ACM/IEEE International Conference on Human-Robot Interaction (HRI 2020), March 23 26, 2020, Cambridge, United Kingdom. ACM, New York, NY, USA. </a> <a href="https://www.researchgate.net/publication/335518077_An_Automated_Vehicle_AV_like_Me_The_Impact_of_Personality_Similarities_and_Differences_between_Humans_and_AVs" class="list-group-item"> Zhang, Qiaoning, <strong>Esterwood, Connor</strong>, Yang, X. Jessie, &amp; RobertJr, Lionel P. (2019). An Automated Vehicle (AV) like Me? The Impact of Personality Similarities and Differences between Humans and AVs. Association for the Advancement of Artificial Intelligence 2019 Symposium </a> <a href="https://deepblue.lib.umich.edu/bitstream/handle/2027.42/149648/GVSETS%202019_FinalPaper.pdf?sequence=1&isAllowed=y" class="list-group-item"> Zhao, H., Azevedo-Sa, H., <strong>Esterwood, C.</strong>, Yang, X. J., Robert, L., &amp; Tilbury, D. (2019). Error Type, Risk, Performance, and Trust: Investigating the Different Impacts of false alarms and misses on Trust and Performance. Ground Vehicle Systems Engineering and Technology Symposium. 2019. </a></p>
 </div>
 <hr />
 <div itemscope="" itemtype="https://schema.org/Person">
@@ -376,7 +335,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
